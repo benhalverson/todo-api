@@ -10,6 +10,10 @@ const TodoSchema = new mongoose.Schema({
 		type: Date,
 		required: [ true, 'Please select a due date' ]
 	},
+	done: {
+		type: Boolean,
+		required: true,
+	},
 	createdAt: {
 		type: Date,
 		default: Date.now
