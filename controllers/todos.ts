@@ -40,7 +40,7 @@ export const addTodo = async (req: Request, res: Response, _next: NextFunction) 
 	} catch (error) {
 		if ((error.name = 'ValidationError')) {
 			const messages = Object.values(error.errrs).map((value: any) => value.message);
-
+			console.log('error', error);
 			return res.status(400).json({
 				success: false,
 				error: messages
