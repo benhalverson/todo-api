@@ -2,16 +2,17 @@
   "name": "todo-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "npm run build && node server.js",
     "start:dev": "ts-node server.ts",
-    "build": "tsc --noEmit server.ts",
-    "dev": " ./node_modules/nodemon/bin/nodemon.js --exec ts-node server.ts"
+    "build": "./node_modules/typescript/bin/tsc --noEmit server.ts",
+    "dev": " ./node_modules/nodemon/bin/nodemon.js --exec ts-node server.ts",
+    "clean": "rm -rf node_modules package-lock.json dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ben Halverson",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
