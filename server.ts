@@ -1,9 +1,9 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import morgan from 'morgan';
-import helmet from 'helmet';;
+import * as express from 'express';
+import * as bodyParser from 'body-parser';
+import * as dotenv from 'dotenv';
+import * as cors from 'cors';
+import * as morgan from 'morgan';
+import * as helmet from 'helmet';;
 import todos from './routes/todos';
 import connectDb from './config/db';
 dotenv.config({path: './config/.env'})
